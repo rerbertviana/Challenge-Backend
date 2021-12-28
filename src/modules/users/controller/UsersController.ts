@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import CreateDataService from "../services/CreateDataService";
 import CreateUserService from "../services/CreateUserService";
 import DeleteUserService from "../services/DeleteUserService";
+import ListGenderService from "../services/ListGenderService";
 import ListUserService from "../services/ListUserService";
 import ShowUserService from "../services/ShowUserService";
 import UpdateUserService from "../services/UpdateUserService";
@@ -58,6 +59,17 @@ export default class UsersController {
         const showUser = new ShowUserService();
 
         const user = await showUser.execute({ userId });
+
+        return response.json(user);
+    }
+
+    public async gender(request: Request, response: Response): Promise<Response> {
+        
+        const { gender } = request.params;
+        
+        const listGender = new ListGenderService();
+
+        const user = await listGender.execute({ gender });
 
         return response.json(user);
     }

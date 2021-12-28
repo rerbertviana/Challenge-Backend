@@ -53,6 +53,16 @@ usersRouter.put(
 
 usersRouter.get('/data', usersController.banco);
 
+usersRouter.get(
+    '/gender/:gender',
+    celebrate({
+        [Segments.PARAMS]: {
+            gender: Joi.required()
+        },
+    }),
+    usersController.gender
+);
+
 usersRouter.get('/', usersController.index);
 
 usersRouter.get(
