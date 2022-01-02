@@ -1,6 +1,6 @@
 {
    "type": "mongodb",
-   "database": "test",
+   "database": "config",
    "synchronize": true,
    "logging": false,
    "entities": [

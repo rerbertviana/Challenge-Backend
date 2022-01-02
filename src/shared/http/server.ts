@@ -32,7 +32,7 @@ createConnection({
     type: "mongodb",
     host: "localhost",
     port: 27017,
-    database: "test",
+    database: "config",
     logging: false,
     synchronize: true,
     entities: [
