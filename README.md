@@ -1,7 +1,9 @@
-# Awesome Project Build with TypeORM
+Fullstack Challenge 2020120
 
-Steps to run this project:
+API / Back-End desenvolvido para o challenge - Coodesh
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+Passos para rodar esse projeto:
+
+1. Execute `npm i` para instalar as depedências 
+2. Execute `yarn dev` para colocar o sistema no ar
+3. utilize esse endpoint `http://localhost:3333/users/data` para popular o banco de dados.
